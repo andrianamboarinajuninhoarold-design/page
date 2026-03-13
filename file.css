@@ -1,0 +1,111 @@
+/* Style général */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fce4ec, #e1bee7);
+  color: #4a148c;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Sections principales avec effet glassmorphism */
+.envelope, .letter, #photos, #counter, #game, #puzzle, #map, #surprise {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.hidden { display: none; }
+
+/* Section photos horizontales */
+#photos {
+  display: flex;              /* aligne horizontalement */
+  justify-content: center;    /* centre les photos */
+  align-items: center;
+  gap: 15px;                  /* espace entre elles */
+  flex-wrap: nowrap;          /* reste sur une seule ligne */
+  overflow-x: auto;           /* scroll horizontal si trop de photos */
+  padding: 10px;
+}
+
+.photo-frame {
+  flex: 0 0 auto;             /* empêche de s’étirer */
+  width: 120px;               /* taille réduite */
+  height: 120px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.photo-frame img {
+  width: 100%;                /* l’image occupe tout le cadre */
+  height: 100%;
+  object-fit: cover;          /* recadre joliment */
+}
+
+.photo-frame:hover {
+  transform: scale(1.05);
+}
+
+/* Boutons */
+button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #f48fb1, #ce93d8);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+button:hover { transform: scale(1.1); }
+
+/* Animation enveloppe */
+.envelope {
+  font-size: 20px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Lettre romantique */
+.letter {
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #880e4f;
+}
+
+/* Compteur d’amour */
+#counter {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ad1457;
+}
+
+/* Jeu des cœurs */
+#gameArea {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  margin: auto;
+  border: 2px dashed rgba(255,255,255,0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.2);
+}
+
+
+/* Carte */
+#map {
+  width: 600px;
+  height: 400px;
+}

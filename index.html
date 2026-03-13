@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notre aventure romantique 💖</title>
+  <link rel="stylesheet" href="file.css">
+</head>
+<body>
+  <!-- Fond étoilé -->
+  <canvas id="stars"></canvas>
+
+  <!-- Enveloppe -->
+  <div id="envelope" class="envelope">
+    <p>Clique sur l’enveloppe 💌</p>
+  </div>
+
+  <!-- Lettre -->
+  <div id="letter" class="letter hidden">
+    <p id="letterText"></p>
+  </div>
+
+  <!-- Section photos -->
+  <section id="photos" class="hidden">
+    <div class="photo-frame"><img src="photo/WhatsApp Image 2026-03-13 at 20.36.38.jpeg" alt="Photo 1"></div>
+    <div class="photo-frame"><img src="photo/WhatsApp Image 20226-03-13 at 20.36.38.jpeg" alt="Photo 2"></div>
+    <div class="photo-frame"><img src="photo/WhatsApp Image 20266-03-13 at 20.36.38.jpeg" alt="Photo 3"></div>
+  </section>
+
+  <!-- Compteur d’amour -->
+  <div id="counter" class="hidden"></div>
+
+  <!-- Mini-jeu -->
+  <div id="game" class="hidden">
+    <p>Attrape 5 cœurs ❤️</p>
+    <div id="gameArea"></div>
+  </div>
+
+
+
+ 
+<!-- Carte -->
+<div id="map" class="hidden">
+  <p>Là où notre histoire a commencé ❤️</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.258925032854!2d49.4131936755575!3d-18.151982482871563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f501004233df43%3A0xad54422646b4f7cd!2sARENA%20SPORTS!5e0!3m2!1sfr!2smg!4v1773427807278!5m2!1sfr!2smg" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+  <!-- Bouton surprise finale -->
+  <button id="surpriseBtn" class="hidden" onclick="window.location.href='message.html'">
+  Clique pour la surprise finale 💖
+</button>
+
+</div>
+
+<!-- Surprise finale -->
+<div id="surprise" class="hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
